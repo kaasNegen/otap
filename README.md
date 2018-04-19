@@ -4,3 +4,6 @@
 
 # Docker Compose
 - Install docker-compose via https://docs.docker.com/compose/install/
+
+# Setup
+Run `docker-compose up` inside this folder

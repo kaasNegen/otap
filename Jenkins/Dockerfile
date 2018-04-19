@@ -14,7 +14,6 @@ FROM jenkins:2.46.3
 # Blue Ocean
 # Pipeline: Stage View Plugin
 
-
 # Disable plugin dialog
 RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
 
