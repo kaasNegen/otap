@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  kaas-jenkins:
+    container_name: kaas-jenkins-container
+    restart: always
+    build: Jenkins
+    ports:
+    - 8903:8080
+
+  kaas-sonarqube:
+    container_name: kaas-sonarqube-container
+    restart: always
+    image: sonarqube:6.3.1
+    ports:
+    - 8904:9000
+    - 8905:9092
+
+# Nexus is not needed for Python development
+
